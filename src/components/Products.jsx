@@ -24,10 +24,10 @@ const Products = ({ cat, filters, sort, filterPage, setPagination, pagination })
             try {
                 const res = await axios.get(
                     cat
-                        ? `https://sell-vercel-two.vercel.app/api/products?category=${cat}&page=${filterPage}`
+                        ? `https://sell-vercel-ashen.vercel.app/api/products?category=${cat}&page=${filterPage}`
                         : // : 'http://localhost:5000/api/products/',
                         //   `http://localhost:5000/api/products/pagination?page=${filterPage}`,
-                          `https://sell-vercel-two.vercel.app/api/products/pagination?page=${filterPage}`,
+                          `https://sell-vercel-ashen.vercel.app/api/products/pagination?page=${filterPage}`,
                 );
                 const { resultProducts, pagi } = res.data;
                 setProducts(resultProducts);

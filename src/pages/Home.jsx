@@ -81,7 +81,7 @@ const Home = () => {
         // console.log('vô home');
         try {
             const res = await axios.get(
-                'https://sell-vercel-two.vercel.app/api/orders/find/' + user._id,
+                'https://sell-vercel-ashen.vercel.app/api/orders/find/' + user._id,
                 {
                     headers: { token: `Bearer ${user.token}` },
                 },

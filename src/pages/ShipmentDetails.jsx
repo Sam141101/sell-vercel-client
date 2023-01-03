@@ -218,7 +218,7 @@ const ShipmentDetails = () => {
     const handleFinishClick = async () => {
         try {
             const res = await axios.post(
-                'https://sell-vercel-two.vercel.app/api/orders/',
+                'https://sell-vercel-ashen.vercel.app/api/orders/',
                 { inputs, cart, userId, totalPrice },
                 {
                     headers: { token: `Bearer ${user.token}` },

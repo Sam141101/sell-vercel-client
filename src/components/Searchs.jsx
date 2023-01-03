@@ -182,7 +182,7 @@ const Searchs = () => {
                 // setLoading(true);
                 const res = await axios.get(
                     // 'http://localhost:5000/api/search?search=' + searchTerm,
-                    `https://sell-vercel-two.vercel.app/api/search?search=${encodeURIComponent(
+                    `https://sell-vercel-ashen.vercel.app/api/search?search=${encodeURIComponent(
                         debounced,
                     )}`,
                 );

@@ -160,7 +160,7 @@ const Register = () => {
     useEffect(() => {
         const verifyEmailUrl = async () => {
             try {
-                const url = `https://sell-vercel-two.vercel.app/api/auth/${param.id}/verify/${param.token}`;
+                const url = `https://sell-vercel-ashen.vercel.app/api/auth/${param.id}/verify/${param.token}`;
                 const res = await axios.get(url);
                 setUserid(res.data.id);
                 // console.log(data);

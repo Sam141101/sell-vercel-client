@@ -3,7 +3,7 @@ import jwt_decode from 'jwt-decode';
 
 const refreshToken = async () => {
     try {
-        const res = await axios.post('https://sell-vercel-two.vercel.app/api/auth/refresh', {
+        const res = await axios.post('https://sell-vercel-ashen.vercel.app/api/auth/refresh', {
             withCredentials: true,
         });
         return res.data;
