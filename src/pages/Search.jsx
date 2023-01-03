@@ -84,7 +84,7 @@ const Search = () => {
         const getProducts = async () => {
             try {
                 const res = await axios.get(
-                    `https://sell-vercel.vercel.app/api/products?category=${cat}&page=${filterPage}`,
+                    `https://sell-vercel-two.vercel.app/api/products?category=${cat}&page=${filterPage}`,
                 );
                 const { resultProducts, pagi } = res.data;
                 setProducts(resultProducts);

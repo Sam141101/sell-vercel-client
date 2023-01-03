@@ -99,7 +99,7 @@ const WaitPurchase = () => {
         const getProduct = async () => {
             try {
                 const res = await axios.get(
-                    'https://sell-vercel.vercel.app/api/orders/find/' + user._id,
+                    'https://sell-vercel-two.vercel.app/api/orders/find/' + user._id,
                     {
                         headers: { token: `Bearer ${user.token}` },
                     },

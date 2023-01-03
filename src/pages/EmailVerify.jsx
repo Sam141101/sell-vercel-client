@@ -147,7 +147,7 @@ const EmailVerify = () => {
     const handleClick = async (e) => {
         e.preventDefault();
         try {
-            const url = `https://sell-vercel.vercel.app/api/auth/confirm/register`;
+            const url = `https://sell-vercel-two.vercel.app/api/auth/confirm/register`;
             const { data: res } = await axios.post(url, { email });
             console.log('xác thực email');
             setMsg(res.message);

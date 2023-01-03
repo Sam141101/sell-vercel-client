@@ -250,7 +250,7 @@ const Product = () => {
             try {
                 // const res = await publicRequest.get('/products/find/' + id);
                 const res = await axios.get(
-                    'https://sell-vercel.vercel.app/api/products/find/' + id,
+                    'https://sell-vercel-two.vercel.app/api/products/find/' + id,
                 );
                 setProduct(res.data);
                 setCat(res.data.categories[0]);
